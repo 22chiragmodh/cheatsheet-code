@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&family=Potta+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>cheatsheet@</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="logo"><img src="icons8-copy.gif" alt=""></span>
+        <div class="content center">
+            This Cheatsheet is very usefull for coding!
+        </div>
+    </nav>
+
+    <div class="container">
+        <ol>
+            <li>HTML Boilerplate 
+                <pre class="language-html"><code>&lt!DOCTYPE html>
+&lthtml lang="en">
+&lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lttitle>Document&lt/title>
+&lt/head>
+&ltbody>
+    
+&lt/body>
+&lt/html></code></pre>
+           
+            <li>C++ Boilerplate with STL libraries
+                <pre class="language-C++"><code>#include&ltiostream>
+#include&ltbits/stdc++.h>
+using namespace std;
+int main()
+{
+    
+    return 0;
+}</code></pre>
+            </li>
+            <li>java class 
+                <pre class="language-js"><code>import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        double b=sc.nextDouble();
+        sc.nextLine();
+        String str=sc.nextLine();
+
+        System.out.println("String: " +str);
+        System.out.println("Double: "+ b);
+        System.out.println("Int: "+ a);
+    }
+}</code></pre>
+            </li>
+            <li>java try-catch
+                <pre class="language-js"><code>import java.util.Scanner;
+public class specificexeption {
+            public static void main(String[] args) {
+                int []marks=new int[4];
+                Scanner sc=new Scanner(System.in);
+                
+                try {
+                        //statement
+                } catch (ArithmeticException e) {
+                    System.err.println("arithmatic exeption");
+                    System.out.println(e);
+                }
+                catch (ArrayIndexOutOfBoundsException e) {
+                    System.err.println("index not found exeption");
+                    System.out.println(e);
+                }
+
+            }
+}</code></pre>
+            </li>
+            <li>C++ generate random number
+                <pre class="language-C++"><code>#include&ltcstdlib>
+#include&ltbits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    for(int i=0;i&lt5;i++)
+{
+    //print five random number between 1 to 10 rand()%10
+    cout&lt&ltrand()%10&lt&ltendl;
+}
+    
+    return 0;
+}</code></pre>
+            </li>
+
+            <li>java generate random number
+                <pre class="language-js"><code>import java.util.Random;
+import java.util.Scanner;
+
+
+public class guessnumbergame {
+    public static void main(String[] args) {
+        
+        int number;
+        Random ran=new Random();
+        number=ran.nextInt(100);
+
+    }
+}</code></pre>
+            </li>
+           
+           
+            
+        </ol>
+    </div>
+    
+</body>
+
+</html>
